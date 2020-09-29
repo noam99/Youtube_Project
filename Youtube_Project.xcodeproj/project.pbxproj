@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31B4BBD2523CD7400B3BA2E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B4BBC2523CD7400B3BA2E /* Response.swift */; };
 		B3FC684C2520E1EA002C47BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC684B2520E1EA002C47BE /* AppDelegate.swift */; };
 		B3FC684E2520E1EA002C47BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC684D2520E1EA002C47BE /* SceneDelegate.swift */; };
 		B3FC68502520E1EA002C47BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC684F2520E1EA002C47BE /* ViewController.swift */; };
@@ -14,9 +15,13 @@
 		B3FC68552520E1EF002C47BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FC68542520E1EF002C47BE /* Assets.xcassets */; };
 		B3FC68582520E1EF002C47BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FC68562520E1EF002C47BE /* LaunchScreen.storyboard */; };
 		B3FC68612520E29B002C47BE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC68602520E29B002C47BE /* Constants.swift */; };
+		B3FC686425227866002C47BE /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC686325227866002C47BE /* Video.swift */; };
+		B3FC686725227903002C47BE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC686625227903002C47BE /* Model.swift */; };
+		B3FC686A25227B66002C47BE /* ConstantsTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC686925227B66002C47BE /* ConstantsTemplate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B31B4BBC2523CD7400B3BA2E /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		B3FC68482520E1EA002C47BE /* Youtube_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youtube_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FC684B2520E1EA002C47BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3FC684D2520E1EA002C47BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,9 @@
 		B3FC68572520E1EF002C47BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3FC68592520E1EF002C47BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3FC68602520E29B002C47BE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B3FC686325227866002C47BE /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		B3FC686625227903002C47BE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B3FC686925227B66002C47BE /* ConstantsTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantsTemplate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,10 @@
 				B3FC684D2520E1EA002C47BE /* SceneDelegate.swift */,
 				B3FC684F2520E1EA002C47BE /* ViewController.swift */,
 				B3FC68602520E29B002C47BE /* Constants.swift */,
+				B3FC686925227B66002C47BE /* ConstantsTemplate.swift */,
+				B3FC686625227903002C47BE /* Model.swift */,
+				B31B4BBC2523CD7400B3BA2E /* Response.swift */,
+				B3FC686325227866002C47BE /* Video.swift */,
 				B3FC68512520E1EA002C47BE /* Main.storyboard */,
 				B3FC68542520E1EF002C47BE /* Assets.xcassets */,
 				B3FC68562520E1EF002C47BE /* LaunchScreen.storyboard */,
@@ -140,10 +152,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31B4BBD2523CD7400B3BA2E /* Response.swift in Sources */,
+				B3FC686A25227B66002C47BE /* ConstantsTemplate.swift in Sources */,
 				B3FC68502520E1EA002C47BE /* ViewController.swift in Sources */,
 				B3FC684C2520E1EA002C47BE /* AppDelegate.swift in Sources */,
 				B3FC684E2520E1EA002C47BE /* SceneDelegate.swift in Sources */,
+				B3FC686725227903002C47BE /* Model.swift in Sources */,
 				B3FC68612520E29B002C47BE /* Constants.swift in Sources */,
+				B3FC686425227866002C47BE /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -275,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,7 +307,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 954F7NAM6R;
 				INFOPLIST_FILE = Youtube_Project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.a.noam.Youtube-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,7 +327,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 954F7NAM6R;
 				INFOPLIST_FILE = Youtube_Project/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.a.noam.Youtube-Project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
