@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B31B4BBD2523CD7400B3BA2E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B4BBC2523CD7400B3BA2E /* Response.swift */; };
+		B31B4BFA252BA72700B3BA2E /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B4BF9252BA72700B3BA2E /* VideoTableViewCell.swift */; };
+		B31B4C09252CE3E100B3BA2E /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31B4C08252CE3E100B3BA2E /* CacheManager.swift */; };
 		B3FC684C2520E1EA002C47BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC684B2520E1EA002C47BE /* AppDelegate.swift */; };
 		B3FC684E2520E1EA002C47BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC684D2520E1EA002C47BE /* SceneDelegate.swift */; };
 		B3FC68502520E1EA002C47BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FC684F2520E1EA002C47BE /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		B31B4BBC2523CD7400B3BA2E /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		B31B4BF9252BA72700B3BA2E /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		B31B4C08252CE3E100B3BA2E /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		B3FC68482520E1EA002C47BE /* Youtube_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Youtube_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3FC684B2520E1EA002C47BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3FC684D2520E1EA002C47BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B31B4BFD252BA75600B3BA2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3FC686625227903002C47BE /* Model.swift */,
+				B31B4BBC2523CD7400B3BA2E /* Response.swift */,
+				B3FC686325227866002C47BE /* Video.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B31B4BFE252BA75C00B3BA2E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B31B4BF9252BA72700B3BA2E /* VideoTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B31B4BFF252BA76900B3BA2E /* Story Boards */ = {
+			isa = PBXGroup;
+			children = (
+				B3FC68512520E1EA002C47BE /* Main.storyboard */,
+				B3FC68562520E1EF002C47BE /* LaunchScreen.storyboard */,
+			);
+			path = "Story Boards";
+			sourceTree = "<group>";
+		};
+		B31B4C00252BA79100B3BA2E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B3FC68602520E29B002C47BE /* Constants.swift */,
+				B3FC686925227B66002C47BE /* ConstantsTemplate.swift */,
+				B31B4C08252CE3E100B3BA2E /* CacheManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B31B4C05252BACBC00B3BA2E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B3FC684F2520E1EA002C47BE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		B3FC683F2520E1EA002C47BE = {
 			isa = PBXGroup;
 			children = (
@@ -68,15 +117,12 @@
 			children = (
 				B3FC684B2520E1EA002C47BE /* AppDelegate.swift */,
 				B3FC684D2520E1EA002C47BE /* SceneDelegate.swift */,
-				B3FC684F2520E1EA002C47BE /* ViewController.swift */,
-				B3FC68602520E29B002C47BE /* Constants.swift */,
-				B3FC686925227B66002C47BE /* ConstantsTemplate.swift */,
-				B3FC686625227903002C47BE /* Model.swift */,
-				B31B4BBC2523CD7400B3BA2E /* Response.swift */,
-				B3FC686325227866002C47BE /* Video.swift */,
-				B3FC68512520E1EA002C47BE /* Main.storyboard */,
+				B31B4C05252BACBC00B3BA2E /* Controllers */,
+				B31B4C00252BA79100B3BA2E /* Helpers */,
+				B31B4BFF252BA76900B3BA2E /* Story Boards */,
+				B31B4BFE252BA75C00B3BA2E /* Views */,
+				B31B4BFD252BA75600B3BA2E /* Models */,
 				B3FC68542520E1EF002C47BE /* Assets.xcassets */,
-				B3FC68562520E1EF002C47BE /* LaunchScreen.storyboard */,
 				B3FC68592520E1EF002C47BE /* Info.plist */,
 			);
 			path = Youtube_Project;
@@ -158,8 +204,10 @@
 				B3FC684C2520E1EA002C47BE /* AppDelegate.swift in Sources */,
 				B3FC684E2520E1EA002C47BE /* SceneDelegate.swift in Sources */,
 				B3FC686725227903002C47BE /* Model.swift in Sources */,
+				B31B4C09252CE3E100B3BA2E /* CacheManager.swift in Sources */,
 				B3FC68612520E29B002C47BE /* Constants.swift in Sources */,
 				B3FC686425227866002C47BE /* Video.swift in Sources */,
+				B31B4BFA252BA72700B3BA2E /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
