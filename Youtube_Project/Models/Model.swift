@@ -20,8 +20,6 @@ class Model {
     func getVideos(){
         //create a URL object
         let url = URL(string: Constants.API_URL)
-        print(2)
-        print(url!)
         
         guard url != nil else {
             print("failed")
@@ -32,15 +30,12 @@ class Model {
         
         //get a data task from the URLsession object
         let dataTask = session.dataTask(with: url!) { (data, response, error) in
+            
             //check if there is no error
             if error != nil || data == nil{
-                print("Status",(response as! HTTPURLResponse).statusCode)
-                print(1)
-                print(error!)
                 return
             }
-            print("Status",(response as! HTTPURLResponse).statusCode)
-            print(data!)
+            
             
             do{
                 //parsing the data into video objects
@@ -50,6 +45,7 @@ class Model {
                 let responseAPI = try decoder.decode(Response.self, from: data!)
                 
                 if responseAPI.items != nil{
+                    
                 //call the "videoFetched" method of the delegate
                    DispatchQueue.main.async {
                         self.delegate?.videosFetched(responseAPI.items!)
